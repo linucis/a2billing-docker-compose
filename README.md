@@ -4,7 +4,7 @@ This is a simple docker-compose development environment for [a2billing](https://
 
 `$ cd a2billing-docker-compose`
 
-`$ docker-compose up`
+`$ docker-compose up -d`
 
 Go to (http://localhost/a2billing/admin) and login. Default creds are:
 
