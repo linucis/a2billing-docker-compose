@@ -6,6 +6,8 @@ This is a simple docker-compose development environment for [a2billing](https://
 
 `docker-compose up`
 
-Go to (http://localhost/a2billing/admin) and login as administrator. Default passwords are:
+Go to (http://localhost/a2billing/admin) and login. Default creds are:
+
 user: root
+
 pass: changepassword
