@@ -1,10 +1,12 @@
 version: '3'
 services:
-    server:
+    a2billing:
         build: ./a2billing
         ports:
             - 80:80
             - 5060:5060
+        volumes: 
+            - www:/var/www/
         depends_on:
             - a2sql
     a2sql:
@@ -15,3 +17,4 @@ services:
             - 3306:3306
 volumes:
     a2sql:
+    www:
