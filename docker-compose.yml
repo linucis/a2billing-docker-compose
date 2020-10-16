@@ -1,0 +1,17 @@
+version: '3'
+services:
+    server:
+        build: ./a2billing
+        ports:
+            - 80:80
+            - 5060:5060
+        depends_on:
+            - a2sql
+    a2sql:
+        build: ./a2sql
+        volumes:
+            - a2sql:/var/lib/mysql
+        ports:
+            - 3306:3306
+volumes:
+    a2sql:
